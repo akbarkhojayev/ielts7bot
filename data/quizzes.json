@@ -1,0 +1,102 @@
+[
+
+  {
+    "question": "If I won the lottery, I _______________ a house on the beach.",
+    "options": [
+      "will buy",
+      "would buy",
+      "can buy"
+    ],
+    "correct_answer": "would buy",
+    "explanation": "1. 'Would buy' to'g'ri javob, chunki bu Conditional Simple (Type 2) zamoni. Bu gapning ma'nosi: 'Agar lotereyada yutgan bo'lsam, dengiz bo'yida bir uyni sotib olardim' degan ma'noni bildiradi. 'If' iborasi bilan Conditional Simple ishlatiladi. Misol: 'If I were rich, I would travel around the world' (Agar boy bo'lsam, dunyo bo'ylab sayohat qilardim).\n\n2. 'Will buy' noto'g'ri, chunki bu Future Simple. Bu shakl kelajakdagi voqea haqida gapiradi, lekin biz shartli holat haqida gapirmoqchimiz.\n\n3. 'Can buy' noto'g'ri, chunki bu Present Simple. Bu shakl hozirgi vaqtning umumiy holati haqida gapiradi, lekin biz shartli holat haqida gapirmoqchimiz.\n\nQOIDA: 'If' + Conditional Simple (Type 2) = shartli holatlar haqida gapirish. Misol: 'If it snowed, I would go skiing' (Agar qor yog'sa, chang'ida uchardim).",
+    "tense_or_topic": "Conditional Sentences (Type 2)"
+  },
+  {
+    "question": "By the time I arrived, they _______________ their homework.",
+    "options": [
+      "had finished",
+      "have finished",
+      "were finishing"
+    ],
+    "correct_answer": "had finished",
+    "explanation": "1. 'Had finished' to'g'ri javob, chunki bu Past Perfect zamoni. Bu gapning ma'nosi: 'Men kelgan paytda ular o'zlarining uy ishlarini tugatgan edilar' degan ma'noni bildiradi. 'By the time' iborasi bilan Past Perfect ishlatiladi. Misol: 'By the time I woke up, they had already eaten breakfast' (Men uyg'onib ketgan paytda, ular allaqachon nonushta qilgan edilar).\n\n2. 'Have finished' noto'g'ri, chunki bu Present Perfect. Bu shakl hozirgi vaqtning boshlang'ich nuqtasidan boshlab tugagan voqea haqida gapiradi, lekin biz o'tgan vaqt haqida gapirmoqchimiz.\n\n3. 'Were finishing' noto'g'ri, chunki bu Past Continuous. Bu shakl o'tgan vaqtning davom etayotgan harakati haqida gapiradi, lekin biz o'tgan vaqtning tugagan voqea haqida gapirmoqchimiz.\n\nQOIDA: 'By the time' + Past Perfect = o'tgan vaqtning tugagan voqea haqida gapirish. Misol: 'By the time I left, they had already finished their project' (Men ketgan paytda, ular allaqachon o'z loyihasini tugatgan edilar).",
+    "tense_or_topic": "Past Perfect"
+  },
+  {
+    "question": "If I _______________ more time, I would learn a new language.",
+    "options": [
+      "had",
+      "have",
+      "will have"
+    ],
+    "correct_answer": "had",
+    "explanation": "1. 'Had' to'g'ri javob, chunki bu Conditional Simple (Type 3) zamoni. Bu gapning ma'nosi: 'Agar men ko'proq vaqtim bo'lsa, yangi til o'rganardim' degan ma'noni bildiradi. 'If' iborasi bilan Conditional Simple ishlatiladi. Misol: 'If I had studied harder, I would have passed the exam' (Agar men qattiqroq o'qigan bo'lsam, imtihonni topgan bo'lardim).\n\n2. 'Have' noto'g'ri, chunki bu Present Simple. Bu shakl hozirgi vaqtning umumiy holati haqida gapiradi, lekin biz shartli holat haqida gapirmoqchimiz.\n\n3. 'Will have' noto'g'ri, chunki bu Future Perfect. Bu shakl kelajakdagi voqea haqida gapiradi, lekin biz shartli holat haqida gapirmoqchimiz.\n\nQOIDA: 'If' + Conditional Simple (Type 3) = shartli holatlar haqida gapirish. Misol: 'If I had known, I would have told you' (Agar men bilgan bo'lsam, sizga aytgan bo'lardim).",
+    "tense_or_topic": "Conditional Sentences (Type 3)"
+  },
+  {
+    "question": "By next year, I _______________ English for five years.",
+    "options": [
+      "will have studied",
+      "have studied",
+      "study"
+    ],
+    "correct_answer": "will have studied",
+    "explanation": "1. 'Will have studied' to'g'ri javob, chunki bu Future Perfect zamoni. Bu gapning ma'nosi: 'Keyingi yil, men ingliz tilini besh yil o'rganib bo'lishaman' degan ma'noni bildiradi. 'By next year' iborasi bilan Future Perfect ishlatiladi. Misol: 'By the time I graduate, I will have studied English for six years' (Men bitirgan paytda, men ingliz tilini olti yil o'rganib bo'lishaman).\n\n2. 'Have studied' noto'g'ri, chunki bu Present Perfect. Bu shakl hozirgi vaqtning boshlang'ich nuqtasidan boshlab tugagan voqea haqida gapiradi, lekin biz kelajakdagi voqea haqida gapirmoqchimiz.\n\n3. 'Study' noto'g'ri, chunki bu Present Simple. Bu shakl hozirgi vaqtning umumiy holati haqida gapiradi, lekin biz kelajakdagi voqea haqida gapirmoqchimiz.\n\nQOIDA: 'By' + Future Perfect = kelajakdagi biror voqea tugagan paytda boshqa bir voqea haqida gapirish. Misol: 'By the time I retire, I will have worked for 30 years' (Men nafaqaga chiqqan paytda, men 30 yil ishlagan bo'lishaman).",
+    "tense_or_topic": "Future Perfect"
+  },
+  {
+    "question": "If it _______________ yesterday, we would have gone to the beach.",
+    "options": [
+      "rains",
+      "rained",
+      "will rain"
+    ],
+    "correct_answer": "rained",
+    "explanation": "1. 'Rained' to'g'ri javob, chunki bu Conditional Simple (Type 2) zamoni. Bu gapning ma'nosi: 'Agar kecha yog'masa, biz plyajga borardik' degan ma'noni bildiradi. 'If' iborasi bilan Conditional Simple ishlatiladi. Misol: 'If it snowed, we would go skiing' (Agar qor yog'sa, biz chang'ida uchardik).\n\n2. 'Rains' noto'g'ri, chunki bu Present Simple. Bu shakl hozirgi vaqtning umumiy holati haqida gapiradi, lekin biz shartli holat haqida gapirmoqchimiz.\n\n3. 'Will rain' noto'g'ri, chunki bu Future Simple. Bu shakl kelajakdagi voqea haqida gapiradi, lekin biz shartli holat haqida gapirmoqchimiz.\n\nQOIDA: 'If' + Conditional Simple (Type 2) = shartli holatlar haqida gapirish. Misol: 'If I were you, I would not do that' (Agar men siz bo'lsam, men shuni qilmayman).",
+    "tense_or_topic": "Conditional Sentences (Type 2)"
+  },
+  {
+    "question": "I wish I _______________ a million dollars.",
+    "options": [
+      "have",
+      "had",
+      "will have"
+    ],
+    "correct_answer": "had",
+    "explanation": "1. 'Had' to'g'ri javob, chunki bu Conditional Simple (Type 3) zamoni. Bu gapning ma'nosi: 'Men bir million dollarim bo'lsa, baxtli bo'lar edim' degan ma'noni bildiradi. 'I wish' iborasi bilan Conditional Simple ishlatiladi. Misol: 'I wish I had studied harder when I was at school' (Men xohlayman, maktabda o'qigan paytda qattiqroq o'qigan bo'lsam).\n\n2. 'Have' noto'g'ri, chunki bu Present Simple. Bu shakl hozirgi vaqtning umumiy holati haqida gapiradi, lekin biz shartli holat haqida gapirmoqchimiz.\n\n3. 'Will have' noto'g'ri, chunki bu Future Perfect. Bu shakl kelajakdagi voqea haqida gapiradi, lekin biz shartli holat haqida gapirmoqchimiz.\n\nQOIDA: 'I wish' + Conditional Simple (Type 3) = shartli holatlar haqida gapirish. Misol: 'I wish I had known about it earlier' (Men xohlayman, bu haqida oldinroq bilgan bo'lsam).",
+    "tense_or_topic": "Conditional Sentences (Type 3)"
+  },
+  {
+    "question": "By the time I finish my studies, I _______________ English for ten years.",
+    "options": [
+      "will have studied",
+      "have studied",
+      "study"
+    ],
+    "correct_answer": "will have studied",
+    "explanation": "1. 'Will have studied' to'g'ri javob, chunki bu Future Perfect zamoni. Bu gapning ma'nosi: 'Men o'qishimni tugatgan paytda, men ingliz tilini o'n yil o'rganib bo'lishaman' degan ma'noni bildiradi. 'By the time' iborasi bilan Future Perfect ishlatiladi. Misol: 'By the time I retire, I will have worked for 30 years' (Men nafaqaga chiqqan paytda, men 30 yil ishlagan bo'lishaman).\n\n2. 'Have studied' noto'g'ri, chunki bu Present Perfect. Bu shakl hozirgi vaqtning boshlang'ich nuqtasidan boshlab tugagan voqea haqida gapiradi, lekin biz kelajakdagi voqea haqida gapirmoqchimiz.\n\n3. 'Study' noto'g'ri, chunki bu Present Simple. Bu shakl hozirgi vaqtning umumiy holati haqida gapiradi, lekin biz kelajakdagi voqea haqida gapirmoqchimiz.\n\nQOIDA: 'By' + Future Perfect = kelajakdagi biror voqea tugagan paytda boshqa bir voqea haqida gapirish. Misol: 'By the time I graduate, I will have studied English for six years' (Men bitirgan paytda, men ingliz tilini olti yil o'rganib bo'lishaman).",
+    "tense_or_topic": "Future Perfect"
+  },
+  {
+    "question": "If I won the lottery, I _______________ a house on the beach.",
+    "options": [
+      "will buy",
+      "would buy",
+      "can buy"
+    ],
+    "correct_answer": "would buy",
+    "explanation": "1. 'Would buy' to'g'ri javob, chunki bu Conditional Simple (Type 2) zamoni. Bu gapning ma'nosi: 'Agar lotereyada yutgan bo'lsam, dengiz bo'yida bir uyni sotib olardim' degan ma'noni bildiradi. 'If' iborasi bilan Conditional Simple ishlatiladi. Misol: 'If I were rich, I would travel around the world' (Agar boy bo'lsam, dunyo bo'ylab sayohat qilardim).\n\n2. 'Will buy' noto'g'ri, chunki bu Future Simple. Bu shakl kelajakdagi voqea haqida gapiradi, lekin biz shartli holat haqida gapirmoqchimiz.\n\n3. 'Can buy' noto'g'ri, chunki bu Present Simple. Bu shakl hozirgi vaqtning umumiy holati haqida gapiradi, lekin biz shartli holat haqida gapirmoqchimiz.\n\nQOIDA: 'If' + Conditional Simple (Type 2) = shartli holatlar haqida gapirish. Misol: 'If it snowed, I would go skiing' (Agar qor yog'sa, chang'ida uchardim).",
+    "tense_or_topic": "Conditional Sentences (Type 2)"
+  },
+  {
+    "question": "By next year, I _______________ English for five years.",
+    "options": [
+      "will have studied",
+      "have studied",
+      "study"
+    ],
+    "correct_answer": "will have studied",
+    "explanation": "1. 'Will have studied' to'g'ri javob, chunki bu Future Perfect zamoni. Bu gapning ma'nosi: 'Keyingi yil, men ingliz tilini besh yil o'rganib bo'lishaman' degan ma'noni bildiradi. 'By next year' iborasi bilan Future Perfect ishlatiladi. Misol: 'By the time I graduate, I will have studied English for six years' (Men bitirgan paytda, men ingliz tilini olti yil o'rganib bo'lishaman).\n\n2. 'Have studied' noto'g'ri, chunki bu Present Perfect. Bu shakl hozirgi vaqtning boshlang'ich nuqtasidan boshlab tugagan voqea haqida gapiradi, lekin biz kelajakdagi voqea haqida gapirmoqchimiz.\n\n3. 'Study' noto'g'ri, chunki bu Present Simple. Bu shakl hozirgi vaqtning umumiy holati haqida gapiradi, lekin biz kelajakdagi voqea haqida gapirmoqchimiz.\n\nQOIDA: 'By' + Future Perfect = kelajakdagi biror voqea tugagan paytda boshqa bir voqea haqida gapirish. Misol: 'By the time I retire, I will have worked for 30 years' (Men nafaqaga chiqqan paytda, men 30 yil ishlagan bo'lishaman).",
+    "tense_or_topic": "Future Perfect"
+  }
+]
