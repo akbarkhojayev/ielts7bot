@@ -158,8 +158,9 @@ async def send_vocab_question(target, user_id: int, state: FSMContext):
 
     data = await state.get_data()
     current_index = data.get("vocab_index", 0)
+    vocab_indices = data.get("vocab_indices", [])
 
-    if current_index >= len(vocab_list):
+    if current_index >= len(vocab_indices):
         total = data.get("vocab_total", len(vocab_list))
         correct = data.get("vocab_correct", 0)
 
@@ -176,7 +177,8 @@ async def send_vocab_question(target, user_id: int, state: FSMContext):
         await state.clear()
         return
 
-    question = generate_vocab_question(vocab_list, current_index)
+    actual_index = vocab_indices[current_index]
+    question = generate_vocab_question(vocab_list, actual_index)
 
     if not question:
         if isinstance(target, CallbackQuery):

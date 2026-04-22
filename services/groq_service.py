@@ -5,7 +5,7 @@
 import json
 import logging
 import httpx
-from config import GROQ_API_KEY, GROQ_MODEL, QUIZ_BATCH_SIZE
+from config import GROQ_API_KEYS, GROQ_MODEL, QUIZ_BATCH_SIZE
 
 logger = logging.getLogger(__name__)
 
@@ -70,17 +70,21 @@ FAQAT JSON ARRAY QAYTARING - BOSHQA HECH NARSA YOZMANG!
 
 
 async def generate_quiz_questions() -> list[dict] | None:
-    headers = {
-        "Authorization": f"Bearer {GROQ_API_KEY}",
-        "Content-Type": "application/json",
-    }
+    for api_key_index, api_key in enumerate(GROQ_API_KEYS):
+        try:
+            logger.info(f"Quiz yaratish uchun API key #{api_key_index + 1} ishlatilmoqda...")
+            
+            headers = {
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            }
 
-    payload = {
-        "model": GROQ_MODEL,
-        "messages": [
-            {
-                "role": "system",
-                "content": """Siz IELTS o'qituvchisi va Advanced English Grammar Quiz yaratuvchi AI tizimсiz. 
+            payload = {
+                "model": GROQ_MODEL,
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": """Siz IELTS o'qituvchisi va Advanced English Grammar Quiz yaratuvchi AI tizimсiz. 
 Sizning vazifangiz:
 1. FAQAT JSON formatda javob berish - boshqa hech narsa yozmang
 2. Har bir savol QIYIN va AMALIY bo'lsin
@@ -88,46 +92,61 @@ Sizning vazifangiz:
 4. Noto'g'ri variantlarni alohida tushuntiring
 5. Grammar qoidalarini ANIQ AYTING
 6. Talablar qat'iy bajarilsin - hech qachon kamroq yoki ko'proq savol yozmang""",
-            },
-            {
-                "role": "user",
-                "content": QUIZ_GENERATION_PROMPT,
-            },
-        ],
-        "temperature": 0.8,
-        "max_tokens": 6000,
-    }
+                    },
+                    {
+                        "role": "user",
+                        "content": QUIZ_GENERATION_PROMPT,
+                    },
+                ],
+                "temperature": 0.8,
+                "max_tokens": 6000,
+            }
 
-    try:
-        async with httpx.AsyncClient(timeout=60.0) as client:
-            response = await client.post(GROQ_API_URL, headers=headers, json=payload)
-            response.raise_for_status()
+            async with httpx.AsyncClient(timeout=60.0) as client:
+                response = await client.post(GROQ_API_URL, headers=headers, json=payload)
+                response.raise_for_status()
 
-        data = response.json()
-        raw_content = data["choices"][0]["message"]["content"].strip()
+            data = response.json()
+            raw_content = data["choices"][0]["message"]["content"].strip()
 
-        if raw_content.startswith("```"):
-            lines = raw_content.split("\n")
-            raw_content = "\n".join(lines[1:-1]) if lines[-1].strip() == "```" else "\n".join(lines[1:])
+            if raw_content.startswith("```"):
+                lines = raw_content.split("\n")
+                raw_content = "\n".join(lines[1:-1]) if lines[-1].strip() == "```" else "\n".join(lines[1:])
 
-        quizzes = json.loads(raw_content)
+            quizzes = json.loads(raw_content)
 
-        validated = []
-        for q in quizzes:
-            if all(k in q for k in ["question", "options", "correct_answer", "explanation", "tense_or_topic"]):
-                if len(q["options"]) == 3 and q["correct_answer"] in q["options"]:
-                    validated.append(q)
+            validated = []
+            for q in quizzes:
+                if all(k in q for k in ["question", "options", "correct_answer", "explanation", "tense_or_topic"]):
+                    if len(q["options"]) == 3 and q["correct_answer"] in q["options"]:
+                        validated.append(q)
 
-        logger.info(f"Groq AI {len(validated)} ta savol yaratdi")
-        return validated
+            logger.info(f"Groq AI {len(validated)} ta savol yaratdi (API key #{api_key_index + 1})")
+            return validated
 
-    except httpx.HTTPStatusError as e:
-        logger.error(f"Groq API HTTP xatosi: {e.response.status_code} - {e.response.text}")
-        return None
-    except json.JSONDecodeError as e:
-        logger.error(f"Groq javobini JSON ga o'girishda xato: {e}")
-        logger.debug(f"Groq raw response: {raw_content if 'raw_content' in dir() else 'N/A'}")
-        return None
-    except Exception as e:
-        logger.error(f"Groq API da kutilmagan xato: {e}")
-        return None
+        except httpx.HTTPStatusError as e:
+            logger.warning(f"API key #{api_key_index + 1} HTTP xatosi: {e.response.status_code}")
+            if api_key_index < len(GROQ_API_KEYS) - 1:
+                logger.info(f"Keyingi API key bilan qayta urinilmoqda...")
+                continue
+            else:
+                logger.error(f"Barcha API keylar ishlamadi")
+                return None
+        except json.JSONDecodeError as e:
+            logger.warning(f"API key #{api_key_index + 1} JSON xatosi: {e}")
+            if api_key_index < len(GROQ_API_KEYS) - 1:
+                logger.info(f"Keyingi API key bilan qayta urinilmoqda...")
+                continue
+            else:
+                logger.error(f"Barcha API keylar ishlamadi")
+                return None
+        except Exception as e:
+            logger.warning(f"API key #{api_key_index + 1} da xato: {e}")
+            if api_key_index < len(GROQ_API_KEYS) - 1:
+                logger.info(f"Keyingi API key bilan qayta urinilmoqda...")
+                continue
+            else:
+                logger.error(f"Barcha API keylar ishlamadi")
+                return None
+
+    return None

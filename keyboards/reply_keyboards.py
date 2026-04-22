@@ -7,6 +7,9 @@ def main_menu_keyboard() -> ReplyKeyboardMarkup:
             [
                 KeyboardButton(text="📝 Quiz"),
                 KeyboardButton(text="📚 Vocabulary"),
+            ],
+            [
+                KeyboardButton(text="🎤 Speaking"),
             ]
         ],
         resize_keyboard=True,

@@ -11,7 +11,7 @@ from services.json_service import ensure_data_dir
 from services.groq_service import generate_quiz_questions
 from services.json_service import get_quiz_count, add_quizzes
 
-from handlers import start_handler, quiz_handler, vocabulary_handler
+from handlers import start_handler, quiz_handler, vocabulary_handler, speaking_handler
 
 logging.basicConfig(
     level=logging.INFO,
@@ -55,6 +55,7 @@ async def main():
     dp.include_router(start_handler.router)
     dp.include_router(quiz_handler.router)
     dp.include_router(vocabulary_handler.router)
+    dp.include_router(speaking_handler.router)
 
     dp.startup.register(on_startup)
 

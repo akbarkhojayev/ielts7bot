@@ -2,8 +2,10 @@
 # config.py - Bot uchun barcha sozlamalar
 # ============================================================
 
-BOT_TOKEN = "8455467625:AAHNR95G4RgWB1E61Cubs_YJGMQLwUoqW7g"
+# BOT_TOKEN = "8455467625:AAHNR95G4RgWB1E61Cubs_YJGMQLwUoqW7g"
+BOT_TOKEN = "8624048684:AAGk0KcaF8MOE3LG6CVcBMsu_T3Z2L8-UWk"
 
+# Groq API Keys - fallback uchun bir nechta key
 
 
 GROQ_MODEL = "llama-3.3-70b-versatile"
